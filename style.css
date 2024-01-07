@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: IRANSans;
+        src: url(../media/fonts/IRANSansX-Medium.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-thin;
+        src: url(../media/fonts/IRANSansX-Thin.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-extralight;
+        src: url(../media/fonts/IRANSansX-UltraLight.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-light;
+        src: url(../media/fonts/IRANSansX-Light.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-medium;
+        src: url(../media/fonts/IRANSansX-Medium.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-semibold;
+        src: url(../media/fonts/IRANSansX-DemiBold.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-bold;
+        src: url(../media/fonts/IRANSansX-Bold.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-extrabold;
+        src: url(../media/fonts/IRANSansX-ExtraBold.woff);
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: IRANSans-black;
+        src: url(../media/fonts/IRANSansX-Black.woff);
+    }
+}
