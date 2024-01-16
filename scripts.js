@@ -1,7 +1,13 @@
-setTimeout(() => {
-    document.getElementById("loading-image-container").style.animation = "slideDown 1s forwards";
-    document.getElementById("page-content").style.display = "block";
-  }, 3000);
+setTimeout(function() {
+    const loadingContainer = document.querySelector('.loading-container');
+    loadingContainer.style.opacity = 0; /* Fade out the loading container */
+  
+    setTimeout(function() {
+      loadingContainer.style.display = 'none'; /* Completely hide it */
+      const pageContent = document.querySelector('.page-content');
+      pageContent.style.opacity = 1; /* Fade in the page content */
+    }, 1000); /* Delay to ensure smooth transition */
+  }, 3100); /* Show loading image for 3 seconds */
 
 $(document).on("click", "#hotDrinkIcon", function () {
 
