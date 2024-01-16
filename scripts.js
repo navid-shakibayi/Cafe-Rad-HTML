@@ -1,3 +1,8 @@
+setTimeout(() => {
+    document.getElementById("loading-image-container").style.animation = "slideDown 1s forwards";
+    document.getElementById("page-content").style.display = "block";
+  }, 3000);
+
 $(document).on("click", "#hotDrinkIcon", function () {
 
     $("html, body").animate({

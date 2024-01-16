@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S806431ZEH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-S806431ZEH');
@@ -19,124 +19,123 @@
 
 <body class="bg-rad-1 text-rad-3 font-IRANSans">
 
-    <main>
+    <style>
+        #loading-image-container {
+            position: fixed;
+            /* Keep image fixed on the screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100dvh;
+            background-color: #efe8e2;
+            /* Optional background color */
+            display: flex;
+            /* Center image horizontally and vertically */
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            /* Ensure image is above other content */
+        }
+
+        #loading-image {
+            /* Adjust image size and styling as needed */
+            width: 60%;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+
+    <div id="loading-image-container">
+        <img id="loading-image" src="./media/logo/logo-intro.png" alt="Loading Image">
+    </div>
+
+    <main id="page-content" style="display: none;">
         <section class="max-w-7xl mx-auto px-6 mt-8 bg-rad-1 sticky top-0 py-5 bg-opacity-80">
             <div class="flex gap-6 overflow-auto snap-x">
 
-                <div id="hotDrinkIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/coffee.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="hotDrinkIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/coffee.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">نوشیدنی گرم</p>
                 </div>
 
-                <div id="browingIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/browing.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="browingIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/browing.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">قهوه دمی</p>
                 </div>
 
-                <div id="teeIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/tee.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="teeIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/tee.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg text-sm">چای و دمنوش</p>
                 </div>
 
-                <div id="coldDrinkIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/cold.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="coldDrinkIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/cold.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg text-sm">نوشیدنی سرد</p>
                 </div>
 
-                <div id="icedCoffeeIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/icedcoffe.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="icedCoffeeIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/icedcoffe.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">آیس کافی</p>
                 </div>
 
-                <div id="shakeIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/shake.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="shakeIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/shake.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">شیک</p>
                 </div>
 
-                <div id="cakeIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/cake.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="cakeIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/cake.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">کیک و وافل</p>
                 </div>
 
-                <div id="friesIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/fries.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="friesIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/fries.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">پیش غذا</p>
                 </div>
 
-                <div id="pastaIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/pasta.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="pastaIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/pasta.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">پاستا</p>
                 </div>
 
-                <div id="burgureIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/burger.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="burgureIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/burger.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">برگر</p>
                 </div>
 
-                <div id="paniniIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/panini.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="paniniIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/panini.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">پنینی</p>
                 </div>
 
-                <div id="pizzaIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/pizza.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="pizzaIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/pizza.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">پیتزا</p>
                 </div>
 
-                <div id="breakfastIcon" class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
-                    <img
-                        src="./media/icons/breakfast.png"
-                        alt="burgur"
-                        class="w-12 aspect-square mt-5"
-                    >
+                <div id="breakfastIcon"
+                    class="flex flex-col items-center justify-between bg-rad-6 w-[120px] h-[120px] aspect-square rounded-lg">
+                    <img src="./media/icons/breakfast.png" alt="burgur" class="w-12 aspect-square mt-5">
                     <p class="p-2 text-center text-sm text-nowrap bg-rad-7 w-full rounded-b-lg">صبحانه</p>
                 </div>
             </div>
@@ -151,10 +150,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/esspresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/esspresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -174,10 +170,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -197,10 +190,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -220,16 +210,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/latte-nuttella.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/latte-nuttella.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">نوتلا لاته</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، نوتلا</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، نوتلا
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -243,16 +231,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/mocka.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/mocka.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">موکا</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، سیروپ شکلات</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ،
+                            سیروپ شکلات</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -266,16 +252,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/caramel-machiato.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/caramel-machiato.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">کارامل ماکیاتو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، سیروپ کارامل</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ،
+                            سیروپ کارامل</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -289,10 +273,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -311,16 +292,14 @@
             </div>
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/cinamon-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/cinamon-latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">سینامون لاته</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، سیروپ دارچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ،
+                            سیروپ دارچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -334,10 +313,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -357,16 +333,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">موکاچینو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، سیروپ شکلات ، پودر کاکائو</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ،
+                            سیروپ شکلات ، پودر کاکائو</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -380,16 +354,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/coconat-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/coconat-latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">کوکونات لاته</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر نارگیل ، فوم شیر</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر نارگیل ، فوم شیر
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -403,16 +375,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/carbonat-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/carbonat-latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">کربنات لاته</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، پودر کربن فعال خوراکی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه اسپرسو دبل ، شیر ، فوم شیر ، پودر
+                            کربن فعال خوراکی</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -426,10 +396,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/hot-chocolate.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/hot-chocolate.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -449,10 +416,8 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/hot-chocolate-bastani.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/hot-chocolate-bastani.jpg" alt=""
+                        class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -472,10 +437,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -503,10 +465,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -526,16 +485,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">ایروپرس</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار ایروپرس</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار ایروپرس
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -549,10 +506,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -569,19 +523,17 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/france.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">فرانسه</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار فرنچ پرس</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار فرنچ پرس
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -595,16 +547,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">کلدبرو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار کلدبرو</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار کلدبرو
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -618,16 +568,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">اوریگامی</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار اوریگامی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">یک شات قهوه دم آوری شده با دم افزار اوریگامی
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -649,10 +597,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-siah.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-siah.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -672,10 +617,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-limoo-asal.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-limoo-asal.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -695,10 +637,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-darchin.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-darchin.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -718,10 +657,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-zaferan.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-zaferan.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -741,16 +677,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-masala.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-masala.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">چای ماسالا</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شیر ، ادویه های هل ، فلفل ، جوز هندی ، میخک ، زنجبیل</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شیر ، ادویه های هل ، فلفل ، جوز هندی ، میخک ،
+                            زنجبیل</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -764,10 +698,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-torsh.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-torsh.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -787,10 +718,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-ghonche.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-ghonche.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -810,10 +738,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-gilan.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-gilan.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -833,10 +758,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-bahar.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-bahar.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -856,10 +778,8 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-sib-darchin.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-sib-darchin.jpg" alt=""
+                        class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -879,10 +799,8 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-nemidonamcheme.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-nemidonamcheme.jpg" alt=""
+                        class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -902,10 +820,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-oon.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-oon.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -925,16 +840,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/damnoosh-onyeki.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/damnoosh-onyeki.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">اون یکی دمنوش</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، عسل ، چای سرخ ، گل گاو زبان ، گل محمدی ، سنبل الطیب</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، عسل ، چای سرخ ، گل گاو زبان ، گل محمدی
+                            ، سنبل الطیب</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -948,10 +861,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chai-hel.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chai-hel.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -979,16 +889,14 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/lemonade.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/lemonade.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">لیموناد</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، آب گازدار</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، آب گازدار
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1002,16 +910,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/mojito.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/mojito.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">موهیتو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، آب گازدار ، نعنا ، سیروپ نعنا</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، آب گازدار ،
+                            نعنا ، سیروپ نعنا</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1025,16 +931,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/red-mojito.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/red-mojito.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">رد موهیتو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، سیروپ نعنا ، سیروپ کرن بری ، توت فرنگی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، اسلایس لیمو ، سیروپ لیمو ، سیروپ نعنا
+                            ، سیروپ کرن بری ، توت فرنگی</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1048,16 +952,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/blue-spring.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/blue-spring.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">بلو اسپرینگ</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، تخم شربتی ، عرق بهارنارنج ، سیروپ بلوکارسائو</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">لیمو ، تخم شربتی ، عرق بهارنارنج ، سیروپ
+                            بلوکارسائو</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1071,10 +973,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/lemon-margarita.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/lemon-margarita.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1094,10 +993,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/green-lake.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/green-lake.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1117,16 +1013,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/blue-mango.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/blue-mango.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">بلو مانگو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">انبه ، شیر نارگیل ، سیروپ بلوکارسائو ، سیروپ انبه</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">انبه ، شیر نارگیل ، سیروپ بلوکارسائو ، سیروپ
+                            انبه</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1140,16 +1034,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iran.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iran.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">شربت ایران</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">زعفران ، تخم شربتی ، خاکشیر ، عرق بهار ، عرق کاسنی ، نسترن ، بیدمشک ، گلاب</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">زعفران ، تخم شربتی ، خاکشیر ، عرق بهار ، عرق
+                            کاسنی ، نسترن ، بیدمشک ، گلاب</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1163,10 +1055,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/sib-torsh.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/sib-torsh.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1186,10 +1075,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1209,16 +1095,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/chakavack.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/chakavack.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">اسموتی چکاوک</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی شاتوت ، تخم شربتی ، آلوئه ورا ، سیروپ کرن بری</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی شاتوت ، تخم شربتی ، آلوئه ورا ، سیروپ
+                            کرن بری</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1232,16 +1116,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/coco-bar.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/coco-bar.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">اسموتی کوکوبار</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">زرشک ، گلپر ، سیروپ نارگیل ، نمک ، سیروپ کرن بری</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">زرشک ، گلپر ، سیروپ نارگیل ، نمک ، سیروپ کرن
+                            بری</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1263,10 +1145,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1286,10 +1165,8 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-caramel-machiato.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-caramel-machiato.jpg" alt=""
+                        class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1309,10 +1186,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-americano.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-americano.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1332,10 +1206,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-mocha.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-mocha.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1355,10 +1226,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-matcha-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-matcha-latte.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1378,10 +1246,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-matcha.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-matcha.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1401,10 +1266,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-cortado.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-cortado.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1424,10 +1286,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/afogato.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/afogato.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1447,10 +1306,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso-plus.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso-plus.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1470,10 +1326,8 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-strawberry-latte.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-strawberry-latte.jpg" alt=""
+                        class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1493,10 +1347,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/iced-hony-esspresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/iced-hony-esspresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1524,10 +1375,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1547,10 +1395,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-nuttella.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-nuttella.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1570,10 +1415,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1593,16 +1435,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-badamzamini.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-badamzamini.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">شیک بادام زمینی</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی وانیل ، بادام زمینی ، کره بادام زمینی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی وانیل ، بادام زمینی ، کره بادام زمینی
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1616,10 +1456,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1639,10 +1476,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-chokolate.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-chokolate.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1662,10 +1496,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-madar.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-madar.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1685,10 +1516,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-gandom.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-gandom.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1708,10 +1536,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1731,16 +1556,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-moon.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-moon.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">شیکمون</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی وانیل ، توت فرنگی ، بیسکویت ، سیروپ کرن بری</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">بستنی وانیل ، توت فرنگی ، بیسکویت ، سیروپ کرن
+                            بری</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1754,10 +1577,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-lotus.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-lotus.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1777,10 +1597,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/shake-shatoot.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/shake-shatoot.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1808,10 +1625,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1831,10 +1645,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1854,10 +1665,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1877,10 +1685,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1900,10 +1705,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1923,10 +1725,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -1946,16 +1745,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">وافل کره بادام زمینی</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">چهار اسلایس وافل ، کره بادام زمینی ، بادام زمینی ، بستنی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">چهار اسلایس وافل ، کره بادام زمینی ، بادام
+                            زمینی ، بستنی</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -1969,10 +1766,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2000,10 +1794,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2023,10 +1814,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2046,10 +1834,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2069,10 +1854,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2092,10 +1874,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2115,10 +1894,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2138,10 +1914,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2161,10 +1934,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2184,16 +1954,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">سالاد اسفناج</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">اسفناج ، گوشت ، پنیر لبنه ، میوه ، نان خشک ،‌ سس زرشک</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">اسفناج ، گوشت ، پنیر لبنه ، میوه ، نان خشک ،‌
+                            سس زرشک</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2207,10 +1975,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2230,10 +1995,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2253,16 +2015,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">سالاد سزار</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شنیسل مرغ ، کاهو ، گوجه گیلاسی ، زیتون ، نان سیر ، سس سزار</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شنیسل مرغ ، کاهو ، گوجه گیلاسی ، زیتون ، نان
+                            سیر ، سس سزار</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2276,16 +2036,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">سالاد سزار سوخاری</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شنیسل مرغ سوخاری ، کاهو ، گوجه گیلاسی ، زیتون ، نان سیر ، سس سزار</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">شنیسل مرغ سوخاری ، کاهو ، گوجه گیلاسی ، زیتون
+                            ، نان سیر ، سس سزار</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2299,16 +2057,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">سالاد مخصوصمون</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کاهو ،‌خیار ،‌ گوجه ، سبزیجات ، سس لبو ، بیکن بوقلمون ، بیبی کورن</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کاهو ،‌خیار ،‌ گوجه ، سبزیجات ، سس لبو ، بیکن
+                            بوقلمون ، بیبی کورن</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2330,10 +2086,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2353,10 +2106,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2376,16 +2126,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">چیکن پستو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنه ، سس پستو ، پارمزان ، شنیسل ، بادام زمینی</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنه ، سس پستو ، پارمزان ، شنیسل ، بادام زمینی
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2399,16 +2147,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">عربیتا</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنه ، سس گوجه ، زیتون سیاه ، موتزارلا ، پارمزان</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنه ، سس گوجه ، زیتون سیاه ، موتزارلا ،
+                            پارمزان</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2430,16 +2176,14 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">برگر کلاسیک</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، پنیر چدار ، پیاز کاراملی ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، پنیر چدار ، پیاز کاراملی ، سس مخصوص ،
+                            دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2453,16 +2197,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">ماشروم برگر</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، پنیر چدار ، پیاز کاراملی ، قارج ، پنیر ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، پنیر چدار ، پیاز کاراملی ، قارج ، پنیر
+                            ، سس مخصوص ، دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2476,16 +2218,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">دبل برگر</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">دو عدد برگر ، پنیر چدار ، پیاز کاراملی ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">دو عدد برگر ، پنیر چدار ، پیاز کاراملی ، سس
+                            مخصوص ، دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2499,16 +2239,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">برگر مرغ</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">دو عدد برگر مرغ ، پنیر چدار ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">دو عدد برگر مرغ ، پنیر چدار ، سس مخصوص ،
+                            دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2522,16 +2260,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">برگر گوشت و مرغ</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">برگر گوشت ، برگر مرغ ، پنیر چدار ، پیاز کاراملی ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">برگر گوشت ، برگر مرغ ، پنیر چدار ، پیاز
+                            کاراملی ، سس مخصوص ، دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2545,16 +2281,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">برگر رست بیف</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">برگر گوشت ، گوشت رست بیف ، پنیر چدار ، پیاز کاراملی ، سس مخصوص ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">برگر گوشت ، گوشت رست بیف ، پنیر چدار ، پیاز
+                            کاراملی ، سس مخصوص ، دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2568,10 +2302,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2599,16 +2330,14 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">پنینی مرغ و بادمجان</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">مرغ ، بادمجان کبابی ، پنیر پارمزان ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">مرغ ، بادمجان کبابی ، پنیر پارمزان ، دورچین
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2622,10 +2351,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2645,16 +2371,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">پنینی گوشت و باربیکیو</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، فلفل دلمه ، سس مخصوص ، پنیر پیتزا ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت ، فلفل دلمه ، سس مخصوص ، پنیر پیتزا ،
+                            دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2668,10 +2392,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2691,16 +2412,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">پنینی سبزیجات</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کدو سوخاری ، سس گوجه ، هویج ، فلفل دلمه ، پنیر پیتزا ، موتزارلا</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کدو سوخاری ، سس گوجه ، هویج ، فلفل دلمه ،
+                            پنیر پیتزا ، موتزارلا</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2714,10 +2433,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2737,16 +2453,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">پنینی هات چیکن</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">مرغ ، سس مخصوص ، قارج ، پیاز کاراملی ، سیر</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">مرغ ، سس مخصوص ، قارج ، پیاز کاراملی ، سیر
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2768,16 +2482,14 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">قارچ و گوشت</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت چرخ کرده ، قارچ ، فلفل دلمه ، سس مخصوص</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">گوشت چرخ کرده ، قارچ ، فلفل دلمه ، سس مخصوص
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -2791,10 +2503,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2814,10 +2523,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2837,10 +2543,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2860,10 +2563,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2891,10 +2591,7 @@
         <section class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2914,10 +2611,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2937,10 +2631,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2960,10 +2651,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -2983,10 +2671,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3006,10 +2691,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3029,10 +2711,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3052,10 +2731,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3083,16 +2759,14 @@
         <section class="max-w-7xl mx-auto px-6 mb-8 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">ایرانی</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنیر ، گردو ، مربا ، عسل ، خامه ، گوجه ، خیار</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">پنیر ، گردو ، مربا ، عسل ، خامه ، گوجه ، خیار
+                        </p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -3106,16 +2780,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">انگلیسی</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">تخم مرغ ، بیکن ، قارچ ، کوکتل ، نان تست ، لوبیا ، گوجه</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">تخم مرغ ، بیکن ، قارچ ، کوکتل ، نان تست ،
+                            لوبیا ، گوجه</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -3129,10 +2801,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3152,10 +2821,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3175,10 +2841,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3198,10 +2861,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3221,16 +2881,14 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 class="text-rad-4 text-xl font-IRANSans-medium mt-4">لقمه مخصوص</h2>
-                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کدو ، بیکن ، قارچ ، گوجه ، پیاز کاراملی ، اسفناج ، پنیر پیتزا ، دورچین</p>
+                        <p class="text-[12px] w-full leading-4 mt-3 pe-2 ">کدو ، بیکن ، قارچ ، گوجه ، پیاز کاراملی ،
+                            اسفناج ، پنیر پیتزا ، دورچین</p>
                     </div>
 
                     <div class="flex mb-3 ">
@@ -3244,10 +2902,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3267,10 +2922,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3290,10 +2942,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -3313,10 +2962,7 @@
 
             <div class="bg-rad-7 h-[150px] rounded-lg flex gap-4 mt-4">
                 <div class="h-full min-w-[150px] flex items-center ms-2">
-                    <img src="./media/cardimage/espresso.jpg"
-                        alt=""
-                        class="h-[130px] w-[150px] rounded-md "
-                    >
+                    <img src="./media/cardimage/espresso.jpg" alt="" class="h-[130px] w-[150px] rounded-md ">
                 </div>
 
                 <div class="flex flex-col justify-between">
