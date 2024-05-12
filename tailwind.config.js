@@ -14,6 +14,7 @@ module.exports = {
             'rad-7': '#333537',
             'rad-8': '#424b54',
             'rad-9': '#efe8e2',
+            'rad-10': '#a8323a',
         },
 
         fontFamily: {
